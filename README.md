@@ -1,6 +1,5 @@
-# parktorun
+# parktoplay
 
-PARK TO RUN
+PARK TO PLAY
 
-A single page web application that allows you to see avaiable running events in the area that you can sign up for.
-Also along with available parking that you can pay for as well.
+A single page web application that allows you to see reviews for venues and check to see if there is available parking that you can pay for as well.
