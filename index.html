@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app="parkToPlay">
+    <head>
+        <title>Park To Play-PTP</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Lato" rel="stylesheet">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body ng-controller="HomeCtrl as home">
+
+        <nav class="navbar navbar-fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#/home">Park to Play</a>
+                <a href="#/home">Home</a>
+                <a href="#/about">About</a>
+            </div>
+        </nav>
+
+        <section>
+            <ng-view></ng-view>
+        </section>
+
+        <!--Footer-->
+				<nav class="navbar navbar-bottom">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-sm-4">
+	                    <h5 id='footer-header'> SITEMAP </h5>
+	                    <div class="col-sm-4">
+	                        <p>News</p>
+	                        <p>contact</p>
+	                    </div>
+	                    <div class="col-sm-4">
+
+	                        <p class="lead">Privacy Policy</p>
+	                    </div>
+	                </div>
+	                <div class="col-sm-4">
+	                    <h5 id='footer-header'> xxxx </h3>
+	                    <p>yyyyyyyyyyyyy</p>
+	                </div>
+	                <div class="col-sm-4">
+	                    <h5 id='footer-header'> xxxxx </h3>
+	                    <p>uuuuuuuuuuuuuuu</p>
+	                </div>
+	            </div>
+	        </div>
+	    </nav>
+
+        <!--Controllers-->
+        <script type="text/javascript" src="/controllers/HomeCtrl.js"></script>
+        <script type="text/javascript" src="/controllers/AboutCtrl.js"></script>
+
+    </body>
+</html>
