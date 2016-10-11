@@ -1,7 +1,7 @@
 .navbar-brand {
   font-family: 'Lato', sans-serif;
   font-family: 'Bungee Inline', cursive;
-  color: white; }
+  color: #FFF; }
 
 a {
   float: right;
@@ -24,15 +24,20 @@ h1 {
 .navbar {
   background-color: #6495ED; }
 
+.fa {
+  font-size: 3.5em;
+  color: #6495ED;
+  padding-top: 20px; }
+
 .jumbotron {
   margin-bottom: 0;
   background-image: url("../img/denver.jpg");
   background-position: 0 45%;
   background-size: cover;
   background-repeat: no-repeat;
-  color: white;
+  color: #FFF;
   text-shadow: black 0.3em 0.3em 0.3em;
-  padding-top: 10%;
+  padding-top: 15%;
   padding-bottom: 10%; }
 
 /*# sourceMappingURL=style.css.map */
