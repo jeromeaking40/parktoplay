@@ -1,0 +1,11 @@
+/*----ICON STYLES---*/
+.fa {
+    font-size  : 3.5em;
+    color      : $primary-color;
+    padding-top: 20px;
+
+    .fa-envelope {
+        color    : $secondary-color;
+        font-size: 1.5em;
+    }
+}

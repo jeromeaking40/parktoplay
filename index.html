@@ -4,7 +4,7 @@
         <title>Park To Play-PTP</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"/>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/application.css">
         <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Lato" rel="stylesheet">
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.js"></script>
@@ -27,31 +27,28 @@
         <!--Footer-->
         <nav class="navbar navbar-bottom">
             <div class="container">
-                <div class="row">
+                <div class="pull-left">
+                    <h5>Designed and Developed by Jerome King</h5>
+                </div>
+
+                <div class="row pull-right">
+                    <div class="col-sm-6">
+                        <h5 class="text-center">Help</h5>
+                        <a href="#/contact">Contact</a>
+                    </div>
 
                     <div class="col-sm-6">
-                        <h5 class='footer-header'>
-                            Help
-                        </h5>
-                        <div class="col-sm-4">
-                            <p>Contact</p>
-                        </div>
-
-                        <div class="col-sm-6">
-                            <h5 class='footer-header'>
-                                Company
-                            </h5>
-                            <p>Privacy Policy</p>
-                            <p>Sitemap</p>
-                        </div>
-
+                        <h5 class="text-center">Company</h5>
+                        <a href="#/sitemap">Sitemap</a>
                     </div>
+
                 </div>
-            </nav>
+            </div>
+        </nav>
 
-            <!--Controllers-->
-            <script type="text/javascript" src="/controllers/HomeCtrl.js"></script>
-            <script type="text/javascript" src="/controllers/AboutCtrl.js"></script>
+        <!--Controllers-->
+        <script type="text/javascript" src="/controllers/HomeCtrl.js"></script>
+        <script type="text/javascript" src="/controllers/AboutCtrl.js"></script>
 
-        </body>
-    </html>
+    </body>
+</html>

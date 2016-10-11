@@ -1,0 +1,10 @@
+/*----HEADER STYLES---*/
+.navbar {
+    background-color: $primary-color;
+
+    .navbar-brand {
+        font-family: 'Lato', sans-serif;
+        font-family: 'Bungee Inline', cursive;
+        color      : $secondary-color;
+    }
+}
