@@ -19,8 +19,7 @@ function Router($routeProvider) {
             controller: "ContactCtrl as contact"
         })
         .when("/sitemap", {
-            templateUrl: "/views/sitemap.html",
-            controller: "SitemapCtrl as sitemap"
+            templateUrl: "/views/sitemap.html"
         })
         .otherwise({
             redirectTo: "/"

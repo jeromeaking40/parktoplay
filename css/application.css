@@ -3,23 +3,30 @@
 /*---COLORS---*/
 /*----FONTS--*/
 /*----BASE STYLES---*/
-a {
-  float: right;
-  font-family: 'Bungee Inline', cursive;
+.navbar a {
+  font-family: "Bungee Inline", cursive;
   text-decoration: none;
-  float: right;
   padding: 10px;
   color: #FFF;
   text-shadow: black 0.3em 0.3em 0.3em; }
+  .navbar a:hover {
+    color: #696969; }
+
+body {
+  padding-top: 50px; }
 
 h1 {
-  font-family: 'Bungee Inline', cursive; }
+  font-family: "Bungee Inline", cursive; }
 
 h5 {
-  font-family: 'Lato', sans-serif; }
+  font-family: "Lato", sans-serif; }
 
 .lead {
-  font-family: 'Lato', sans-serif; }
+  font-family: "Lato", sans-serif; }
+
+.sitemap {
+  font-family: "Lato", sans-serif;
+  padding-bottom: 10px; }
 
 .jumbotron {
   margin-bottom: 0;
@@ -37,8 +44,7 @@ h5 {
 .navbar {
   background-color: #6495ED; }
   .navbar .navbar-brand {
-    font-family: 'Lato', sans-serif;
-    font-family: 'Bungee Inline', cursive;
+    font-family: "Bungee Inline", cursive;
     color: #FFF; }
 
 /*----FOOTER STYLES---*/

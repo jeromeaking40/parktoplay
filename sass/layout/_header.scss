@@ -3,8 +3,7 @@
     background-color: $primary-color;
 
     .navbar-brand {
-        font-family: 'Lato', sans-serif;
-        font-family: 'Bungee Inline', cursive;
+        font-family: $stack-bungee;
         color      : $secondary-color;
     }
 }
