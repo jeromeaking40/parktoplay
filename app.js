@@ -10,13 +10,11 @@ function Router($routeProvider) {
             templateUrl: "/views/home.html",
             controller: "HomeCtrl as home"
         })
-        .when("/about", {
-            templateUrl: "/views/about.html",
-            controller: "AboutCtrl as about"
+        .when("/search", {
+            templateUrl: "/views/search.html",
         })
         .when("/contact", {
             templateUrl: "/views/contact.html",
-            controller: "ContactCtrl as contact"
         })
         .when("/sitemap", {
             templateUrl: "/views/sitemap.html"

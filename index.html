@@ -17,39 +17,25 @@
             <nav class="navbar navbar-fixed-top">
                 <a class="navbar-brand" href="#/home">Park to Play</a>
                 <a class="pull-right" href="#/home">Home</a>
-                <a class="pull-right" href="#/about">About</a>
-            </div>
-        </nav>
+                <a class="pull-right" href="#/search">Search</a>
+            </nav>
+        <!--End of Navigation-->
 
-        <section>
+
+        <!--Page Content-->
             <ng-view></ng-view>
-        </section>
+        <!--End of Page Content-->
+
 
         <!--Footer-->
-        <nav class="navbar navbar-bottom">
-            <div class="container">
-                <div class="pull-left">
-                    <h5>Designed and Developed by Jerome King</h5>
-                </div>
+        <footer class="footer">
+        <p class="text-muted">Place sticky footer content here.</p>
+        </footer>
+      </div>
+        <!--End of Footer-->
 
-                <div class="row pull-right">
-                    <div class="col-sm-6">
-                        <h5 class="text-center">Help</h5>
-                        <a href="#/contact">Contact</a>
-                    </div>
-
-                    <div class="col-sm-6">
-                        <h5 class="text-center">Company</h5>
-                        <a href="#/sitemap">Sitemap</a>
-                    </div>
-
-                </div>
-            </div>
-        </nav>
 
         <!--Controllers-->
         <script type="text/javascript" src="/controllers/HomeCtrl.js"></script>
-        <script type="text/javascript" src="/controllers/AboutCtrl.js"></script>
-
     </body>
 </html>
