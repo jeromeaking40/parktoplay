@@ -12,7 +12,7 @@
 }
 
 body {
-    padding-top: 50px;
+    padding-top: 45px;
 }
 
 h1 {
@@ -27,11 +27,6 @@ h5 {
     font-family: $stack-lato;
 }
 
-.sitemap {
-    font-family   : $stack-lato;
-    padding-bottom: 10px;
-}
-
 .jumbotron {
     margin-bottom      : 0;
     background-image   : url('../img/denver.jpg');
@@ -42,6 +37,14 @@ h5 {
     text-shadow        : black 0.3em 0.3em 0.3em;
     padding-top        : 15%;
     padding-bottom     : 10%;
+}
+
+.inner.cover {
+    padding         : 0;
+    overflow-y      : auto;
+    height          : 200px;
+    background-color: rgba(255,255,255, 0.3);
+    box-shadow      : 0 0 10px #888;
 }
 
 .footer {

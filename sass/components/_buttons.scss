@@ -2,3 +2,12 @@
 .input-holder {
     position: relative;
 }
+
+#search {
+    color: $secondary-color;
+}
+
+.btn {
+    background-color: $primary-color;
+    font-family     : $stack-lato;
+}
