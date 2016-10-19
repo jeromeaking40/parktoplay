@@ -8,7 +8,7 @@ function HomeController($http) {
     var home = this;
     console.log('Test');
 
-    home.searchVenue = "";
+    //  home.searchVenue = "";
 
     //API CALL
     home.findVenue = function() {
@@ -40,14 +40,21 @@ function HomeController($http) {
             //
             //     })
             // $http.get('https://api.foursquare.com/v2/venues/explore?client_id=XXEJ3UJTJBYJ3RETPR3G24EHCLNOIWVMVMMCRYEQMKBAMS1Q&client_secret=FCA0TMZ0WGESRGC0BWXQTIO3XZOVS1ZDMIH300TFVUVSZBZS&v=20130815&near=Denver&near=Boulder&query= ' + home.searchVenue + '&limit=50')
-            .then(function(response, status) {
+            .then(function(response) {
                     console.log(response.data);
-                    console.log(home.searchVenue);
+
                     //Assign a variable to retrieve the response data
                     home.returnVenue = response.data;
+                    // home.searchVenue = "";
+
                 },
-                function(response, status) {
-                    console.log("Failure:", status);
+                function(response) {
+                    console.log("Failure:", response);
                 });
+        home.searchVenue = "";
+
+
     };
+
+
 }

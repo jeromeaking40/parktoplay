@@ -18,6 +18,7 @@ function Router($routeProvider) {
         })
         .when("/venue/:url_segment", {
             templateUrl: "/views/venue.html",
+            controller: "venueCtrl as venue"
         })
         .otherwise({
             redirectTo: "/"
