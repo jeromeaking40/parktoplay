@@ -1,5 +1,13 @@
 <h1 class="text-center">VENUES</h1>
+<!-- <hr> -->
 
 <div ng-repeat="parking in vCtrl.venue.parking_listings">
-    {{ parking.location_name }}
+  <h2 class="text-center">
+     Parking location: {{ parking.location_name }}<br>
+     Address: {{ parking.address}}<br>
+     Indoor: {{ parking.indoor }}<br>
+     Spots: {{ parking.available_spots }}<br>
+     Price: {{parking.price_formatted }}
+     <hr class="style-four">
+  </h2>
 </div>

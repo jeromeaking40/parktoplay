@@ -1,9 +1,10 @@
 <div class="container">
-
-    <h2 class="text-center">Search for venues in the Colorado area below</h2>
+<h2 class="text-center">Search for venues in the Colorado area below</h2>
 
     <div class="row">
         <div class="col-md-4 col-md-offset-4">
+
+          <!--SEARCH BAR-->
             <form ng-submit="home.findVenue()">
                <div class="input-group">
                   <input type="text" class="form-control"  placeholder="Search for venue..." ng-model="home.searchVenue"  name="srch-term" id="srch-term">
@@ -14,20 +15,20 @@
                    </div>
                 </div>
             </form>
+
             <!--VENUE SEARCH-->
             <div ng-repeat="venue in home.returnVenue">
               <!-- <h1 ng-repeat="group in home.returnVenue.response.groups | filter:home.searchVenue"> -->
               <h2>
                 <a href="#/venue{{ venue.url_fragment }}">
-                  <p> Name: {{ venue.name }}</p>
-                  <p> Address: {{ venue.address }}</p>
-                  <p> City: {{ venue.city }}</p>
-                  <p> State: {{ venue.state }}</p>
+                  <p> Name: {{ venue.name }}</p><br>
+                  <p> Address: {{ venue.address }}</p><br>
+                  <p> Location: {{ venue.city }}, {{ venue.state }}</p>
                 </a>
+                <hr class="style-four">
               </h2>
             </div>
+
         </div>
     </div>
-</div>
-</div>
 </div>

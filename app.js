@@ -4,7 +4,7 @@ angular.module('parkToPlay', ['ngRoute'])
 Router.$inject = ['$routeProvider'];
 
 function Router($routeProvider) {
-
+    //CONFIGURING ROUTES
     $routeProvider
         .when("/", {
             templateUrl: "/views/home.html",

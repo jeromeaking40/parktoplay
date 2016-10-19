@@ -26,6 +26,12 @@ h5 {
 .lead {
     font-family: $stack-lato;
 }
+/* Single-direction drop shadow */
+hr.style-four {
+    height    : 12px;
+    border    : 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
 
 .jumbotron {
     margin-bottom      : 0;

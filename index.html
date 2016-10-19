@@ -12,32 +12,30 @@
     </head>
     <body ng-controller="HomeCtrl as home">
 
-        <!--Navigation-->
+        <!--NAV-->
             <nav class="navbar navbar-fixed-top">
                 <a class="navbar-brand" href="#/home">Park to Play</a>
                 <a class="pull-right" href="#/home">Home</a>
                 <a class="pull-right" href="#/search">Search</a>
             </nav>
-        <!--End of Navigation-->
+        <!--END OF NAV-->
 
 
-        <!--Page Content-->
+        <!--PAGE CONTENT-->
             <ng-view></ng-view>
-        <!--End of Page Content-->
+        <!--END OF PAGE CONTENT-->
 
 
-        <!--Footer-->
+        <!--FOOTER-->
         <footer class="navbar-default">
           <div class="container-fluid">
-            <span>Winning!</span>
+            <h5 class="text-center">JK</h5>
           </div>
         </footer>
+        <!--END OF FOOTER-->
 
 
-        <!--End of Footer-->
-
-
-        <!--Controllers-->
+        <!--CONTROLLERS-->
         <script type="text/javascript" src="/controllers/HomeCtrl.js"></script>
         <script type="text/javascript" src="/controllers/VenueCtrl.js"></script>
     </body>
