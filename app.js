@@ -16,9 +16,9 @@ function Router($routeProvider) {
         .when("/contact", {
             templateUrl: "/views/contact.html",
         })
-        .when("/venue/:url_segment", {
+        .when("/venue/:url_fragment", {
             templateUrl: "/views/venue.html",
-            controller: "venueCtrl as venue"
+            controller: "venueCtrl as vCtrl"
         })
         .otherwise({
             redirectTo: "/"
