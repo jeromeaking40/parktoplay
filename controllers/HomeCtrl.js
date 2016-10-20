@@ -25,8 +25,8 @@ function HomeController($http, $q) {
                     home.returnVenue = response.data;
                     console.log(response.data.length);
                     if (response.data.length === 0) {
-                        alert("Sorry we can't find any venues with that name. Please choose another.");
-                        console.log("No response from the returnVenue");
+                        alertify.alert("Park to Play", "Sorry we can't find any venues with that name. Please choose another.");
+                        console.log("No response");
                     }
                     home.searchVenue = "";
                 },

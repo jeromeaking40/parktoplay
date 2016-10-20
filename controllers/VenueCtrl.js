@@ -6,7 +6,7 @@ VenueController.$inject = ['$http', '$routeParams'];
 //VENUE CONTROLLER
 function VenueController($http, $routeParams) {
     console.log($routeParams);
-
+    // alertify.success("Welcome to alertify!");
     var vCtrl = this;
 
     //PARKWHIZ API CALL SETUP
@@ -37,14 +37,12 @@ function VenueController($http, $routeParams) {
             //ASSIGN A VARIABLE TO RETREIVE THE DATA
             vCtrl.venue = res.data;
             if (vCtrl.venue.parking_listings === undefined) {
-                alert("Sorry there was no parking spots found! Please search another venue.");
-                console.log("No response");
+                alertify.alert('Park to Play', 'Sorry there was no parking spots found! Please search another venue.');
+                console.log('No response');
             }
             // vCtrl.callFourSquare();
         }, function(err) {
             console.error(err);
         });
-
-
 
 }
