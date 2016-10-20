@@ -3,7 +3,6 @@ angular.module('parkToPlay')
 
 VenueController.$inject = ['$http', '$routeParams'];
 
-
 //VENUE CONTROLLER
 function VenueController($http, $routeParams) {
     console.log($routeParams);
@@ -20,7 +19,7 @@ function VenueController($http, $routeParams) {
                 // lng=-105.358887
                 // start: 1476726501,
                 // end: 147673730,
-                key: 'cb4a71ff3c5e18429ad32c4c4bc8cdb3'
+                key: 'INSERT KEY'
             }
         });
     };
@@ -38,7 +37,6 @@ function VenueController($http, $routeParams) {
             console.error(err);
         });
 
-
     //FOURSQUARE API CALL
     vCtrl.callFourSquare = function() {
         /* FourSquare API Call */
@@ -46,8 +44,8 @@ function VenueController($http, $routeParams) {
                 method: 'GET',
                 url: 'https://api.foursquare.com/v2/venues/search',
                 params: {
-                    client_id: 'XXEJ3UJTJBYJ3RETPR3G24EHCLNOIWVMVMMCRYEQMKBAMS1Q',
-                    client_secret: 'FCA0TMZ0WGESRGC0BWXQTIO3XZOVS1ZDMIH300TFVUVSZBZS',
+                    client_id: 'INSERT KEY',
+                    client_secret: 'INSERT KEY',
                     v: 20130815,
                     near: "Denver",
                     radius: 500,
