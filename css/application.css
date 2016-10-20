@@ -2,18 +2,10 @@
 /*---BASE IMPORTS---*/
 /*---COLORS---*/
 /*----FONTS--*/
-/*----BASE STYLES---*/
-.navbar a {
-  font-family: "Bungee Inline", cursive;
-  text-decoration: none;
-  padding: 10px;
-  color: #FFF;
-  text-shadow: black 0.3em 0.3em 0.3em; }
-  .navbar a:hover {
-    color: #696969; }
-
-body {
-  padding-top: 45px; }
+body,
+html {
+  padding-top: 25px;
+  height: 100%; }
 
 h1 {
   font-family: "Bungee Inline", cursive; }
@@ -38,8 +30,12 @@ hr.style-four {
   background-repeat: no-repeat;
   color: #FFF;
   text-shadow: black 0.3em 0.3em 0.3em;
-  padding-top: 15%;
+  padding-top: 12%;
   padding-bottom: 10%; }
+
+#wrapper {
+  min-height: 100%;
+  position: relative; }
 
 .inner.cover {
   padding: 0;
@@ -48,15 +44,21 @@ hr.style-four {
   background-color: rgba(255, 255, 255, 0.3);
   box-shadow: 0 0 10px #888; }
 
-.footer {
-  position: relative;
-  bottom: 0;
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
-  background-color: #6495ED; }
+#content {
+  padding-bottom: 100px;
+  /* Height of the footer element */ }
 
 /*---LAYOUT STYLES---*/
+/*----BASE STYLES---*/
+.navbar a {
+  font-family: "Bungee Inline", cursive;
+  text-decoration: none;
+  padding: 10px;
+  color: #FFF;
+  text-shadow: black 0.3em 0.3em 0.3em; }
+  .navbar a:hover {
+    color: #696969; }
+
 /*----HEADER STYLES---*/
 .navbar {
   background-color: #6495ED; }
@@ -67,6 +69,14 @@ hr.style-four {
 /*----FOOTER STYLES---*/
 .navbar-default {
   background-color: #6495ED; }
+
+#footer {
+  background-color: #6495ED;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
 
 /*---COMPONENTS IMPORTS---*/
 /*----BUTTON STYLES---*/
@@ -85,8 +95,9 @@ hr.style-four {
   font-size: 3.5em;
   color: #6495ED;
   padding-top: 20px; }
-  .fa .fa-envelope {
-    color: #FFF;
-    font-size: 1.5em; }
+
+.container-fluid .fa {
+  color: #FFF;
+  font-size: 1.5em; }
 
 /*# sourceMappingURL=application.css.map */

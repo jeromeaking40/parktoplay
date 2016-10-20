@@ -1,3 +1,15 @@
+/*----BASE STYLES---*/
+.navbar a {
+    font-family    : $stack-bungee;
+    text-decoration: none;
+    padding        : 10px;
+    color          : $secondary-color;
+    text-shadow    : black 0.3em 0.3em 0.3em;
+
+    &:hover {
+        color: $hover-color;
+    }
+}
 /*----HEADER STYLES---*/
 .navbar {
     background-color: $primary-color;

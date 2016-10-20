@@ -1,18 +1,7 @@
-/*----BASE STYLES---*/
-.navbar a {
-    font-family    : $stack-bungee;
-    text-decoration: none;
-    padding        : 10px;
-    color          : $secondary-color;
-    text-shadow    : black 0.3em 0.3em 0.3em;
-
-    &:hover {
-        color: $hover-color;
-    }
-}
-
-body {
-    padding-top: 45px;
+body,
+html {
+    padding-top: 25px;
+    height     : 100%;
 }
 
 h1 {
@@ -41,8 +30,13 @@ hr.style-four {
     background-repeat  : no-repeat;
     color              : $secondary-color;
     text-shadow        : black 0.3em 0.3em 0.3em;
-    padding-top        : 15%;
+    padding-top        : 12%;
     padding-bottom     : 10%;
+}
+
+#wrapper {
+    min-height: 100%;
+    position  : relative;
 }
 
 .inner.cover {
@@ -53,11 +47,7 @@ hr.style-four {
     box-shadow      : 0 0 10px #888;
 }
 
-.footer {
-    position        : relative;
-    bottom          : 0;
-    padding-top     : 19px;
-    color           : #777;
-    border-top      : 1px solid #e5e5e5;
-    background-color: $primary-color;
+#content {
+    padding-bottom: 100px;
+    /* Height of the footer element */
 }

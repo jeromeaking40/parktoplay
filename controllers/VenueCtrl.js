@@ -32,8 +32,8 @@ function VenueController($http, $routeParams) {
             console.log(res.data);
             //ASSIGN A VARIABLE TO RETREIVE THE DATA
             vCtrl.venue = res.data;
-            vCtrl.searchFourSquare =
-                vCtrl.callFourSquare();
+            vCtrl.searchFourSquare = "";
+            vCtrl.callFourSquare();
         }, function(err) {
             console.error(err);
         });
@@ -44,7 +44,7 @@ function VenueController($http, $routeParams) {
         /* FourSquare API Call */
         $http({
                 method: 'GET',
-                url: 'https://api.foursquare.com/v2/venues/explore',
+                url: 'https://api.foursquare.com/v2/venues/search',
                 params: {
                     client_id: 'XXEJ3UJTJBYJ3RETPR3G24EHCLNOIWVMVMMCRYEQMKBAMS1Q',
                     client_secret: 'FCA0TMZ0WGESRGC0BWXQTIO3XZOVS1ZDMIH300TFVUVSZBZS',
