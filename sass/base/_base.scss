@@ -3,18 +3,6 @@ html {
     padding-top: 25px;
     height     : 100%;
 }
-
-h1 {
-    font-family: $stack-bungee;
-}
-
-h5 {
-    font-family: $stack-lato;
-}
-
-.lead {
-    font-family: $stack-lato;
-}
 /* Single-direction drop shadow */
 hr.style-four {
     height    : 12px;
@@ -37,6 +25,14 @@ hr.style-four {
 #wrapper {
     min-height: 100%;
     position  : relative;
+}
+
+.input-group.search {
+    padding-top: 50px;
+}
+
+.venue-search {
+    padding-top: 15px;
 }
 
 .inner.cover {

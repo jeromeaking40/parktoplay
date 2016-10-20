@@ -4,10 +4,16 @@
 }
 
 #search {
-    color: $secondary-color;
+    color      : $secondary-color;
+    text-shadow: black 0.3em 0.3em 0.3em;
 }
 
 .btn {
     background-color: $primary-color;
     font-family     : $stack-lato;
+
+    &:hover {
+        color           : $hover-color;
+        background-color: black;
+    }
 }
