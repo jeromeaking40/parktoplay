@@ -9,17 +9,17 @@
                <div class="input-group search text-center">
                   <input type="text" class="form-control"  placeholder="Search for venue..." ng-model="home.searchVenue"  name="srch-term" id="srch-term">
                    <div class="input-group-btn">
-                       <button class="btn btn-default btn-success" type="submit">
+                       <button class="btn btn-default btn-success" type="submit" class="fade" data-dismiss="alert">
                            <i class="glyphicon glyphicon-search"></i>
                        </button>
                    </div>
                 </div>
             </form>
-
             <!--VENUE SEARCH-->
             <div ng-repeat="venue in home.returnVenue">
               <!-- <h1 ng-repeat="group in home.returnVenue.response.groups | filter:home.searchVenue"> -->
               <h2>
+                <img src="../img/battery.svg" ng-show="home.loading">
                 <a href="#/venue{{ venue.url_fragment }}">
                   <p> Name: {{ venue.name }}</p><br>
                   <p> Address: {{ venue.address }}</p><br>

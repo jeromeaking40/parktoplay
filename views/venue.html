@@ -1,16 +1,24 @@
 <h1 class="text-center">PARKING LOCATIONS</h1>
-<p class="lead text-center"> Click on link to book parking </p>
-<!-- <hr> -->
+<p class="lead text-center">Click on link to book parking</p>
 
+<!--LOADING GIF-->
+<img src="../img/battery.svg" class="loading" ng-show="vCtrl.loading">
+
+<!--ACCESSING API PARK LISTING DATA-->
 <div ng-repeat="parking in vCtrl.venue.parking_listings">
-  <h2 class="text-center">
-    <a href="{{parking.parkwhiz_url}}">
-     Parking location: {{ parking.location_name }}<br>
-     Address: {{ parking.address}}<br>
-     Indoor: {{ parking.indoor }}<br>
-     Spots: {{ parking.available_spots }}<br>
-     Price: {{parking.price_formatted }}
-     </a>
-     <hr class="style-four">
-  </h2>
+    <h2 class="text-center">
+        <a href="{{parking.parkwhiz_url}}">
+            Parking location:
+            {{ parking.location_name }}<br>
+            Address:
+            {{ parking.address}}<br>
+            Indoor:
+            {{ parking.indoor }}<br>
+            Spots:
+            {{ parking.available_spots }}<br>
+            Price:
+            {{parking.price_formatted }}
+        </a>
+        <hr class="style-four">
+    </h2>
 </div>

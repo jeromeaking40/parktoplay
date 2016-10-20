@@ -5,7 +5,6 @@ HomeController.$inject = ['$http', '$q'];
 
 function HomeController($http, $q) {
     var home = this;
-
     console.info('Home Controller :: loaded');
 
     //API CALL
@@ -17,17 +16,22 @@ function HomeController($http, $q) {
                     name: home.searchVenue,
                     start: 1476726501,
                     end: 147673730,
-                    key: 'INSERT KEY'
+                    key: 'cb4a71ff3c5e18429ad32c4c4bc8cdb3'
                 }
             })
             .then(function(response) {
-                console.log(response.data);
-
-                //ASSIGN A VARIABLE TO RETREIVE THE DATA
-                home.returnVenue = response.data;
-                home.searchVenue = "";
-            }, function(response) {
-                console.log("Failure:", response);
-            });
+                    console.log(response.data);
+                    //ASSIGN A VARIABLE TO RETREIVE THE DATA
+                    home.returnVenue = response.data;
+                    console.log(response.data.length);
+                    if (response.data.length === 0) {
+                        alert("Sorry we can't find any venues with that name. Please choose another.");
+                        console.log("No response from the returnVenue");
+                    }
+                    home.searchVenue = "";
+                },
+                function(response) {
+                    console.log("Failure:", response);
+                });
     };
 }

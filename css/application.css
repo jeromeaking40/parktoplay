@@ -24,6 +24,10 @@ hr.style-four {
   padding-top: 12%;
   padding-bottom: 10%; }
 
+.loading {
+  display: block;
+  margin: 0 auto; }
+
 #wrapper {
   min-height: 100%;
   position: relative; }
