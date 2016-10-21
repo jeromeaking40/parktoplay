@@ -19,7 +19,7 @@ function VenueController($http, $routeParams) {
                 // lng=-105.358887
                 // start: 1476726501,
                 // end: 147673730,
-                key: 'INSERT KEY'
+                key: 'cb4a71ff3c5e18429ad32c4c4bc8cdb3'
             }
         });
     };
