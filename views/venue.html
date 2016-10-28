@@ -4,7 +4,10 @@
 <!--LOADING GIF-->
 <img src="../img/battery.svg" class="loading" ng-show="vCtrl.loading">
 
-<!--ACCESSING API PARK LISTING DATA-->
+
+
+<!-- ACCESSING API PARK LISTING DATA -->
+
 <div ng-repeat="parking in vCtrl.venue.parking_listings">
     <h2 class="text-center">
         <a href="{{parking.parkwhiz_url}}">

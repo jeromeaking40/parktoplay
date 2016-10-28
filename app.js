@@ -11,16 +11,19 @@ function Router($routeProvider) {
             controller: "HomeCtrl as home"
         })
         .when("/search", {
-            templateUrl: "/views/search.html",
+            templateUrl: "/views/search.html"
         })
         .when("/contact", {
-            templateUrl: "/views/contact.html",
+            templateUrl: "/views/contact.html"
         })
         .when("/venue/:url_fragment", {
             templateUrl: "/views/venue.html",
             controller: "venueCtrl as vCtrl"
         })
+        .when("/errorpage", {
+            templateUrl: "/views/errorpage.html"
+        })
         .otherwise({
-            redirectTo: "/"
+            redirectTo: "/errorpage"
         });
 }

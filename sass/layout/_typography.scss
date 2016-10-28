@@ -1,5 +1,6 @@
 h1 {
     font-family: $stack-bungee;
+    font-size  : 50px;
 }
 
 h2 {
@@ -14,6 +15,10 @@ h5 {
 
 .lead {
     font-family: $stack-lato;
+}
+
+.errorpage {
+    font-size: 80px;
 }
 
 a p {

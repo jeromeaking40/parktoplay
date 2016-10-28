@@ -51,7 +51,8 @@ hr.style-four {
 
 /*---LAYOUT STYLES---*/
 h1 {
-  font-family: "Bungee Inline", cursive; }
+  font-family: "Bungee Inline", cursive;
+  font-size: 50px; }
 
 h2 {
   font-family: "Lato", sans-serif; }
@@ -63,6 +64,9 @@ h5 {
 
 .lead {
   font-family: "Lato", sans-serif; }
+
+.errorpage {
+  font-size: 80px; }
 
 a p {
   font-family: "Lato", sans-serif; }
@@ -224,7 +228,8 @@ input {
 
 .btn {
   background-color: #6495ED;
-  font-family: "Lato", sans-serif; }
+  font-family: "Lato", sans-serif;
+  color: #FFF; }
   .btn:hover {
     color: #4682B4;
     background-color: black; }

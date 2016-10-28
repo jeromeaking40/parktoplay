@@ -11,6 +11,7 @@
 .btn {
     background-color: $primary-color;
     font-family     : $stack-lato;
+    color           : $secondary-color;
 
     &:hover {
         color           : $hover-color;

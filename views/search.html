@@ -17,7 +17,6 @@
             </form>
             <!--VENUE SEARCH-->
             <div ng-repeat="venue in home.returnVenue">
-              <!-- <h1 ng-repeat="group in home.returnVenue.response.groups | filter:home.searchVenue"> -->
               <h2>
                 <img src="../img/battery.svg" ng-show="home.loading">
                 <a href="#/venue{{ venue.url_fragment }}">
