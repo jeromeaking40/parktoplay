@@ -15,7 +15,7 @@ function VenueController($http, $routeParams) {
             method: "GET",
             url: 'http://api.parkwhiz.com/' + fragment,
             params: {
-                key: 'INSERT KEY'
+                key: 'cb4a71ff3c5e18429ad32c4c4bc8cdb3'
             }
         });
     };
