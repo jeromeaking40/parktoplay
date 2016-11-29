@@ -1,0 +1,29 @@
+{
+  "name": "parktoplay",
+  "version": "1.0.0",
+  "description": "PARK TO PLAY",
+  "main": "server.js",
+  "dependencies": {
+    "alertifyjs": "^1.8.0",
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "morgan": "^1.7.0",
+    "request": "^2.79.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeromeaking40/parktoplay.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeromeaking40/parktoplay/issues"
+  },
+  "homepage": "https://github.com/jeromeaking40/parktoplay#readme"
+}

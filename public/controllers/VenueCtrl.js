@@ -11,11 +11,12 @@ function VenueController($http, $routeParams) {
 
     //PARKWHIZ API CALL SETUP
     vCtrl.get = function(fragment) {
+      console.log(fragment);
         return $http({
             method: "GET",
-            url: 'http://api.parkwhiz.com/' + fragment,
+            url: '/venues',
             params: {
-                key: 'INSERT KEY'
+                fragment: fragment
             }
         });
     };

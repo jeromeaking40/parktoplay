@@ -13,9 +13,15 @@
 /*----HEADER STYLES---*/
 .navbar {
     background-color: $primary-color;
+}
 
-    .navbar-brand {
-        font-family: $stack-bungee;
-        color      : $secondary-color;
-    }
+.navbar-brand {
+    font-family: $stack-bungee;
+    color      : $secondary-color;
+    font-size  : 22px;
+}
+
+.nav-pills > li > a {
+    border-radius: 4px;
+    font-size    : 18px;
 }

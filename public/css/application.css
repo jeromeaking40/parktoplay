@@ -201,9 +201,15 @@ input {
 /*----HEADER STYLES---*/
 .navbar {
   background-color: #6495ED; }
-  .navbar .navbar-brand {
-    font-family: "Bungee Inline", cursive;
-    color: #FFF; }
+
+.navbar-brand {
+  font-family: "Bungee Inline", cursive;
+  color: #FFF;
+  font-size: 22px; }
+
+.nav-pills > li > a {
+  border-radius: 4px;
+  font-size: 18px; }
 
 /*----FOOTER STYLES---*/
 .navbar-default {

@@ -13,22 +13,18 @@
         <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon"/>
         <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Lato" rel="stylesheet">
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.js"></script>
         <script src="//cdn.jsdelivr.net/alertifyjs/1.8.0/alertify.min.js"></script>
         <script src="app.js"></script>
     </head>
 
     <body ng-controller="HomeCtrl as home">
         <div id="wrapper">
-            <!--NAV-->
-            <nav class="navbar navbar-fixed-top nav-justified">
-                <a class="navbar-brand" href="#/">Park to Play</a>
-                <a class="pull-right" href="#/contact">Contact</a>
-                <a class="pull-right" href="#/search">Search</a>
-                <a class="pull-right" href="#/">Home</a>
-            </nav>
-            <!--END OF NAV-->
+
+            <!--NAVIGATION-->
+            <ng-include src="'views/navbar.html'"></ng-include>
+            <!--END OF NAVIGATION-->
 
             <!--PAGE CONTENT-->
             <div id="content">
@@ -37,20 +33,9 @@
             <!--END OF PAGE CONTENT-->
 
             <!--FOOTER-->
-            <div id="footer">
-                <footer class="navbar-default">
-                    <div class="container-fluid text-center">
-                        <h5>Designed and Developed by Jerome King</h5>
-                        <a href="http://www.github.com/jeromeaking40">
-                            <i class="fa fa-github"></i>
-                        </a>
-                        <a href="http://www.linkedin.com/in/jerome-king-7b6b8a92">
-                            <i class="fa fa-linkedin"></i>
-                        </a>
-                    </div>
-                </footer>
-            </div>
+            <ng-include src="'views/footer.html'"></ng-include>
             <!--END OF FOOTER-->
+
         </div>
 
         <!--CONTROLLERS-->

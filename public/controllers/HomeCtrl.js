@@ -11,12 +11,9 @@ function HomeController($http, $q) {
     home.findVenue = function() {
         $http({
                 method: "GET",
-                url: 'http://api.parkwhiz.com/venue/search/',
+                url: '/search',
                 params: {
-                    name: home.searchVenue,
-                    start: 1476726501,
-                    end: 147673730,
-                    key: 'INSERT KEY'
+                    name: home.searchVenue
                 }
             })
             .then(function(response) {
