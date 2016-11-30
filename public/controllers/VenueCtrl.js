@@ -35,6 +35,7 @@ function VenueController($http, $routeParams) {
             console.info(vCtrl.venue);
             if (vCtrl.venue.parking_listings === undefined) {
                 alertify.alert('Park to Play', 'Sorry there was no parking spots found! Please search another venue.');
+                location.href = '/#/search';
                 console.info('No response');
             }
         }, function(err) {
